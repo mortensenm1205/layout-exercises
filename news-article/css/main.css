@@ -1,0 +1,300 @@
+h5,
+h4,
+ul,
+p {
+  margin: 0;
+  padding: 0
+}
+
+#main-container {
+  margin: 0;
+  font-size: 18px;
+  font-family: arial;
+  color: #000;
+}
+
+#main-container h2 {
+  margin: 0 0 1% 17%;
+  /*margin: 0;*/
+}
+
+#main-header,
+#top-ad,
+#sub-header {
+  margin: 1% 0;
+}
+
+#main-header {
+  text-align: center;
+  border-bottom: 1px solid lightgrey;
+  /*overflow: auto;*/
+}
+
+#main-header::after {
+  clear:both;
+  display: block;
+  height: 0;
+  content:"";
+  visibility: hidden;
+}
+
+#header-title {
+  display: inline-block;
+}
+
+#header-nav {
+  float: right;
+  width: 15%;
+  margin: 0.3% 0 0 0;
+}
+
+#header-nav a {
+  margin: 0 1%;
+  padding: 5% 6%;
+  background-color: dodgerblue;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+#top-ad {
+  height: 250px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ad-img {
+  background-image: url('kit-kat-ad.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#sub-header {
+  max-width: 65%;
+  margin: 0 auto;
+  border-top: 2px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  /*overflow: auto;*/
+}
+
+#sub-header::after {
+  clear:both;
+  display: block;
+  height: 0;
+  content:"";
+  visibility: hidden;
+}
+
+#sub-header-title,
+#sub-header-social {
+  margin: 2% 0;
+}
+
+#sub-header-title {
+  float: left;
+}
+
+#sub-header-social {
+  width: 15%;
+  padding: 0;
+  float: right;
+}
+
+#sub-header-social li {
+  float: left;
+  width: 22%;
+  height: 28px;
+  margin: 0 3%;
+  list-style-type: none;
+}
+
+.fb-img {
+  background-image: url('fb-logo.png');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.tw-img {
+  background-image: url('tw-logo.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.em-img {
+  background-image: url('em-logo.png');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+
+#main-content,
+#extra-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#article-title{
+  font-size: 2em;
+  display: inline-block;
+  margin: 5% 0;
+}
+
+#article-img {
+  background-image: url('news-event.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+#by-line,
+#article-content {
+  text-align: left;
+}
+
+#article-content {
+  max-width: 50%;
+  margin: 2% auto;
+  line-height: 30px;
+}
+
+#by-line {
+  margin: 0;
+  font-size: 0.7em;
+  font-weight: 100;
+  width: 50%;
+}
+
+#writer-info,
+#related-articles {
+  width: 50%;
+  margin: 0 auto 3% auto;
+}
+
+#writer-social,
+#writer-title,
+#writer-content {
+  margin: 5% 0;
+}
+
+#writer-social {
+  padding: 0;
+}
+
+#writer-social::after {
+  clear: both;
+  content: "";
+  height: 0;
+  display: block;
+  visibility: hidden;
+}
+
+#writer-social li {
+  float: left;
+  width: 6%;
+  height: 35px;
+  margin: 0 0.5%;
+  list-style-type: none;
+}
+
+#writer-title,
+#writer-content {
+  font-weight: 100;
+  text-align: left;
+}
+
+#writer-content {
+  font-size: 0.7em;
+}
+
+#related-articles::after {
+  clear: both;
+  display: block;
+  height: 0;
+  content: "";
+  visibility: hidden;
+}
+
+#related-title {
+  width: 15%;
+  float: left;
+  font-size: 0.7em;
+  /*display: inline-block;*/
+}
+
+#related-list {
+  width: 80%;
+  float: right;
+  /*display: inline-block;*/
+}
+
+#related-list li {
+  list-style-type: none;
+  margin: 0 0 5% 0;
+  padding: 0 0 2% 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+#related-list li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9em;
+  font-weight: 200;
+}
+
+#main-footer {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2% 0;
+  height: 50px;
+  background-color: darkgrey;
+}
+
+#main-footer::after {
+  clear: both;
+  height: 0;
+  display: block;
+  content: "";
+  visibility: hidden;
+}
+
+#main-footer h5 {
+  float: left;
+  color: #fff;
+}
+
+#footer-list {
+  float: right;
+  width: 60%;
+}
+
+#footer-list::after {
+  clear: both;
+  height: 0;
+  content: "";
+  display: block;
+  visibility: hidden;
+
+}
+
+#footer-list li {
+  float: left;
+  list-style: none;
+  margin: 0 2%;
+}
+
+#footer-list li a {
+  text-decoration: none;
+  color: #fff;
+}
