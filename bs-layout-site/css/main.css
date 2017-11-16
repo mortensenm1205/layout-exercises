@@ -1,0 +1,42 @@
+
+/*
+  The only thing I could really create using pure CSS
+*/
+#main-nav {
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff;
+  border-bottom: 2px solid lightgrey;
+}
+
+/*
+ A lot of the styles are changing minor issues. Everything else is done with BS
+*/
+#main-nav h1 {
+  margin: 0;
+  padding-bottom: 1%;
+}
+
+#main-nav a {
+  color: #000;
+}
+
+#main-nav nav a {
+  margin: 0 4%;
+  font-size: 1.7em;
+}
+
+.row section {
+  padding: 1% 0;
+}
+
+#main-content {
+  margin-top: 5%;
+}
+
+#main-content section img {
+  width: 100%;
+}
