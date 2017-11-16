@@ -11,11 +11,11 @@ body {
 }
 
 #main-container::after {
-    clear:both;
-    content:"";
-    visibility: hidden;
-    height: 0;
-    display: block;
+  clear:both;
+  content:"";
+  visibility: hidden;
+  height: 0;
+  display: block;
 }
 
 .box {
@@ -56,12 +56,12 @@ body {
     width: 24%;
   }
 
-  .box:nth-child(3) {
+  /*.box:nth-child(3) {
     clear: left;
   }
 
   .box:nth-child(1),
   .box:nth-child(2) {
     width: 99%;
-  }
+  }*/
 }
