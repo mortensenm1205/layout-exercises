@@ -67,7 +67,7 @@ p {
 }
 
 #ad-img {
-  background-image: url('kit-kat-ad.jpg');
+  background-image: url('../imgs/kit-kat-ad.jpg');
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -114,7 +114,7 @@ p {
 }
 
 .fb-img {
-  background-image: url('fb-logo.png');
+  background-image: url('../imgs/fb-logo.png');
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -122,7 +122,7 @@ p {
 }
 
 .tw-img {
-  background-image: url('tw-logo.jpg');
+  background-image: url('../imgs/tw-logo.jpg');
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -130,7 +130,7 @@ p {
 }
 
 .em-img {
-  background-image: url('em-logo.png');
+  background-image: url('../imgs/em-logo.png');
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -151,7 +151,7 @@ p {
 }
 
 #article-img {
-  background-image: url('news-event.jpg');
+  background-image: url('../imgs/news-event.jpg');
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
