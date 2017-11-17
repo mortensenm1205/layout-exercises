@@ -1,5 +1,7 @@
 body {
-  font-size: 18px;
+  font-size: 16px;
+  font-family: arial;
+  background-color: #6DBCDB;
 }
 
 div, header, h1, h5, nav, ul, li, a, main, footer, p {
@@ -8,7 +10,7 @@ div, header, h1, h5, nav, ul, li, a, main, footer, p {
 
 #container {
   display: grid;
-  grid-template-columns: [main-start] 1fr [center-start] 1fr [col-start] 1fr 1fr [center-end] 1fr [main-end];
+  grid-template-columns: [main-start] 1fr [center-start] 1fr [col] 1fr 1fr [center-end] 1fr [main-end];
   /*grid-template-rows: minmax(100px, auto);*/
   grid-template-rows: [header-start] 200px 200px [header-end] auto auto;
   grid-auto-rows: auto;
@@ -29,6 +31,19 @@ div, header, h1, h5, nav, ul, li, a, main, footer, p {
 #main-header h1,
 #main-header nav {
   margin: 4% 0;
+}
+
+#main-header h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 2.8em;
+}
+
+#main-header nav a {
+  display: block;
+  margin: 5% 0;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.4em;
 }
 
 #hero-img {
@@ -79,10 +94,10 @@ div, header, h1, h5, nav, ul, li, a, main, footer, p {
   }
 
   #main-header {
-    grid-column: center-start / col-start;
+    grid-column: center-start / col;
   }
 
   #main-content {
-    grid-column: col-start / center-end;
+    grid-column: col / center-end;
   }
 }
