@@ -2,28 +2,23 @@ body {
   font-size: 18px;
 }
 
-
 #container {
   display: grid;
-  grid-template-columns: [main-start] 1fr 1fr [head-start] 2fr 2fr [head-end] 1fr [main-end];
+  grid-template-columns: [main-start] 1fr [head-start] 1fr [col-start] 1fr 1fr[head-end] 1fr [main-end];
   /*grid-template-rows: minmax(100px, auto);*/
-  grid-template-rows: [header-start] 200px 200px [header-end] auto 200px;
+  grid-template-rows: [header-start] 200px 200px [header-end] auto auto;
   grid-auto-rows: auto;
   grid-gap: 5px;
 }
 
-#green-box,
-#pink-box,
-#yellow-box,
-#red-box {
+#main-header,
+#hero-img,
+#main-content,
+#footer {
   grid-column: main-start / main-end;
 }
 
-#green-box {
-  background-color: Seagreen;
-}
-
-#pink-box {
+#hero-img {
   background-color: pink;
   background-image: url('../imgs/top-view-plant.jpg');
   background-size: 100%;
@@ -31,28 +26,49 @@ body {
   background-repeat: no-repeat;
 }
 
-#yellow-box {
-  background-color: gold;
-}
-
-#yellow-box p {
+#main-content p {
   font-size: 1.4em;
+  line-height: 45px;
 }
 
 #red-box {
   background-color: Crimson;
 }
 
+#footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#footer-title,
+#footer-list {
+  margin: 0;
+}
+
+#footer-list {
+  grid-column: 2/5;
+}
+
+#footer-list li {
+  list-style-type: none;
+}
+
+#footer-list li a {
+  text-decoration: none;
+  float: left;
+}
+
+
 @media all and (min-width:650px) {
-  #pink-box {
+  #hero-img {
     grid-row: header-start / header-end;
   }
 
-  #green-box {
-    grid-column: main-start / head-start;
+  #main-header {
+    grid-column: head-start / col-start;
   }
 
-  #yellow-box {
-    grid-column: head-start / main-end;
+  #main-content {
+    grid-column: col-start / head-end;
   }
 }
