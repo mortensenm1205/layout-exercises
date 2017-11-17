@@ -1,0 +1,49 @@
+#container {
+  display: grid;
+  grid-template-columns: [main-start] 1fr [head-start] 2fr 2fr [head-end] 1fr [main-end];
+  /*grid-template-rows: minmax(100px, auto);*/
+  grid-template-rows: [header-start] 200px 200px [header-end] 200px 200px;
+  grid-gap: 5px;
+}
+
+#container > div {
+  border: 2px solid dodgerblue;
+  /*grid-column: main-start / main-end;*/
+}
+
+#green-box,
+#pink-box,
+#yellow-box,
+#red-box {
+  grid-column: main-start / main-end;
+}
+
+#green-box {
+  background-color: Seagreen;
+}
+
+#pink-box {
+  background-color: pink;
+}
+
+#yellow-box {
+  background-color: gold;
+}
+
+#red-box {
+  background-color: Crimson;
+}
+
+@media all and (min-width:650px) {
+  #pink-box {
+    grid-row: header-start / header-end;
+  }
+
+  #green-box {
+    grid-column: main-start / head-start;
+  }
+
+  #yellow-box {
+    grid-column: head-start / main-end;
+  }
+}
