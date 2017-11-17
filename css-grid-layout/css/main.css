@@ -1,14 +1,15 @@
-#container {
-  display: grid;
-  grid-template-columns: [main-start] 1fr [head-start] 2fr 2fr [head-end] 1fr [main-end];
-  /*grid-template-rows: minmax(100px, auto);*/
-  grid-template-rows: [header-start] 200px 200px [header-end] 200px 200px;
-  grid-gap: 5px;
+body {
+  font-size: 18px;
 }
 
-#container > div {
-  border: 2px solid dodgerblue;
-  /*grid-column: main-start / main-end;*/
+
+#container {
+  display: grid;
+  grid-template-columns: [main-start] 1fr 1fr [head-start] 2fr 2fr [head-end] 1fr [main-end];
+  /*grid-template-rows: minmax(100px, auto);*/
+  grid-template-rows: [header-start] 200px 200px [header-end] auto 200px;
+  grid-auto-rows: auto;
+  grid-gap: 5px;
 }
 
 #green-box,
@@ -24,10 +25,18 @@
 
 #pink-box {
   background-color: pink;
+  background-image: url('../imgs/top-view-plant.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #yellow-box {
   background-color: gold;
+}
+
+#yellow-box p {
+  font-size: 1.4em;
 }
 
 #red-box {
