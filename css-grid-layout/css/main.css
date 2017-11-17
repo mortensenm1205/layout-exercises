@@ -2,9 +2,13 @@ body {
   font-size: 18px;
 }
 
+div, header, h1, h5, nav, ul, li, a, main, footer, p {
+  margin: 0;
+}
+
 #container {
   display: grid;
-  grid-template-columns: [main-start] 1fr [head-start] 1fr [col-start] 1fr 1fr[head-end] 1fr [main-end];
+  grid-template-columns: [main-start] 1fr [center-start] 1fr [col-start] 1fr 1fr [center-end] 1fr [main-end];
   /*grid-template-rows: minmax(100px, auto);*/
   grid-template-rows: [header-start] 200px 200px [header-end] auto auto;
   grid-auto-rows: auto;
@@ -18,6 +22,15 @@ body {
   grid-column: main-start / main-end;
 }
 
+#main-header {
+  margin: 0 2%;
+}
+
+#main-header h1,
+#main-header nav {
+  margin: 4% 0;
+}
+
 #hero-img {
   background-color: pink;
   background-image: url('../imgs/top-view-plant.jpg');
@@ -27,8 +40,9 @@ body {
 }
 
 #main-content p {
-  font-size: 1.4em;
-  line-height: 45px;
+  font-size: 1.2em;
+  line-height: 40px;
+  padding: 2%;
 }
 
 #red-box {
@@ -65,10 +79,10 @@ body {
   }
 
   #main-header {
-    grid-column: head-start / col-start;
+    grid-column: center-start / col-start;
   }
 
   #main-content {
-    grid-column: col-start / head-end;
+    grid-column: col-start / center-end;
   }
 }
