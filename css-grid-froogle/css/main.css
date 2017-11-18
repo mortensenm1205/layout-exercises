@@ -1,0 +1,87 @@
+
+a,
+h1,
+div,
+nav,
+body,
+form,
+main,
+aside,
+input,
+footer,
+header,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: grid;
+  /*5 Columns, 5 Rows*/
+  grid-template-columns: repeat(5, [col] 1fr);
+  grid-template-rows: [row] auto repeat(6, [row] 100px) 75px [row];
+}
+
+#item-1 {
+  grid-column: col / span 6;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: auto;
+}
+
+#item-1 aside {
+  justify-self: end;
+}
+
+#item-2 {
+  grid-column: col / span 5;
+  grid-row: row 2 / span 7;
+  align-self: center;
+}
+
+#item-2 h1 {
+  font-size: 3.5em;
+  text-align: center;
+}
+
+#item-2 input[type="text"] {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  height: 30px;
+}
+
+#item-2 form {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#item-2 form input {
+  display: block;
+  width: 100%;
+}
+
+#item-3 {
+  grid-column: col / span 6;
+  grid-row: row 8;
+  align-self: end;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: auto;
+}
+
+#footer-r {
+  justify-self: end;
+}
+
+@media all and (min-width:630px) {
+  #item-2 form {
+    width: 50%;
+  }
+
+  #item-2 form input {
+    display: inline-block;
+    width: 15%;
+  }
+}
