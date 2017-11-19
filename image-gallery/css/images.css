@@ -3,19 +3,31 @@ body {
   background-color: #276073;
 }
 
-#main-container {
+.main-container {
   max-width: 1200px;
   margin: 1% auto;
   text-align: center;
   /*overflow: auto;*/
 }
 
-#main-container::after {
+.main-container::after {
   clear:both;
   content:"";
   visibility: hidden;
   height: 0;
   display: block;
+}
+
+#main-nav {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  justify-items: end;
+  justify-content: end;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: #000;
 }
 
 .box {
